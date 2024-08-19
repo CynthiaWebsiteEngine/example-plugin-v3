@@ -1,0 +1,21 @@
+{
+	"$schema": "https://cdn.jsdelivr.net/gh/strawmelonjuice/CynthiaWebsiteEngine@master/source/Plugin-runners/node-plugin-api/package.plugin.schema.json",
+	"name": "example-plugin",
+	"version": "1.0.0",
+	"description": "My cool CynthiaWeb plugin!",
+	"cynthia-plugin": "dist/index.js",
+	"cynthia-plugin-compat": 3.2,
+	"author": "Me!",
+	"license": "MIT",
+	"scripts": {
+		"onBeforeRun": "tsc && echo hello"
+	},
+	"dependencies": {
+		"example-plugin": "/home/mar/source/github/strawmelonjuice/tryout/cynthiaPlugins/example-plugin",
+		"typescript": "^5"
+	},
+	"devDependencies": {
+		"@types/node": "^22.4.1",
+		"@cynthiaweb/plugin-api": "^3.2.1-dev.2"
+	}
+}
